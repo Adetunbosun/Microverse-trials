@@ -22,6 +22,29 @@
 
     -->
     <script  src="js/index.js"></script>
-    <h1>Hello World, we are software developers!!</h1>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+      <label id="name-label">Name</label>
+      <input id="name" placeholder="Enter your name" type="text">
+      <label id="email-label">Email</label>
+      <input id="email" placeholder="Enter your email" type="email">
+      <label id="age-label">Age</label>
+      <input id="number" placeholder="Enter age" type="number">
+      <label id="dropdown-label">Which option best describes your current role?</label>
+      <select id="dropdown">
+        <option>Student</option>
+        <option>Full time learner</option>
+        <option>Full Time Job</option>
+        <option>Prefer not to say</option>
+      </select>
+      <label id="radio-label">Would you recommend freeCodeCamp to a friend?</label>
+      <input type="radio" name="option" id="radio">
+      <label>Definitely</label>
+      <input type="radio" name="option" id="radio1">
+      <label>Maybe</label>
+      <input type="radio" name="option" id="radio2">
+      <label>Not sure</label>
+    </form>
   </body>
 </html>
