@@ -25,21 +25,22 @@
     <h1 id="title">freeCodeCamp Survey Form</h1>
     <p id="description">Thank you for taking the time to help us improve the platform</p>
     <form id="survey-form">
-      <label id="name">Name</label>
-      <input id="name-label" placeholder="Enter your name" type="text"> <br>
-      <label id="email">Email</label>
-      <input id="email-label" placeholder="Enter your email" type="email"> <br>
+      <label id="name-label">Name</label>
+      <input id="name" placeholder="Enter your name" type="text"> <br>
+      <label id="email-label">Email</label>
+      <input type="email" pattern="[^ @]*@[^ @]*" placeholder="Enter your Email"> <br>
       <label id="number-label">Age</label>
-      <input id="number" placeholder="Enter age" type="number"> <br>
-      <label id="dropdown-label">Which option best describes your current role?</label> <br>
-      <select id="dropdown">
+      <input id="number" placeholder="Age" type="number" min="15" max="100"> <br>
+      <label id="dropdown">Which option best describes your current role?</label> <br>
+      <select id="dropdown-label">
+        <option > Select current role</option>
         <option>Student</option>
         <option>Full time learner</option>
         <option>Full Time Job</option>
         <option>Prefer not to say</option>
       </select>
       <br>
-      <label id="radio-label">Would you recommend freeCodeCamp to a friend?</label>
+      <label id="radio">Would you recommend freeCodeCamp to a friend?</label>
       <input type="radio" name="option" id="radio" checked>
       <label>Definitely</label> <br>
       <input type="radio" name="option" id="radio1">
@@ -47,8 +48,8 @@
       <input type="radio" name="option" id="radio2">
       <label>Not sure</label> <br>
 
-      <label id="dropdown-label">What is your favorite feature of freeCodeCamp?</label> <br>
-      <select id="dropdown">
+      <label id="dropdown">What is your favorite feature of freeCodeCamp?</label> <br>
+      <select id="dropdown-label">
         <option>Select an option</option>
         <option>Challenges</option>
         <option>Projects</option>
@@ -57,22 +58,22 @@
       </select>
       <br>
       <label for="check-apply">What would you like to see improved? (Check all that apply)</label> <br>
-      <input type="checkbox" id="front-end"> <label for="front-end"> Front-end Projects</label> <br>
-      <input type="checkbox" id="back-end"> <label for="back-end"> Back-end Projects</label> <br>
-      <input type="checkbox" id="data-visual"> <label for="data-visual"> Data Visualization</label> <br>
-      <input type="checkbox" id="challenges"> <label for="challenges"> Challenges</label> <br>
-      <input type="checkbox" id="open-source-coummnity"> <label for="open-source-coummnity"> Open Source Coummnity </label> <br>
-      <input type="checkbox" id="gitter"> <label for="gitter"> Gitter help rooms</label> <br>
-      <input type="checkbox" id="videos"> <label for="videos"> Videos</label> <br>
-      <input type="checkbox" id="city-meetups"> <label for="city-meetups">City Meetups</label> <br>
-      <input type="checkbox" id="wiki"> <label for="wiki"> Wiki</label> <br>
-      <input type="checkbox" id="forum"> <label for="forum"> Forum </label> <br>
-      <input type="checkbox" id="addtional-courses"> <label for="addtional-courses"> Additional Courses</label>
+      <label for="front-end">  <input type="checkbox" id="front-end" value="front-end" name="front-end"> Front-end Projects</label> <br>
+      <label for="back-end"> <input type="checkbox" id="back-end" value="back-end" name="back-end"> Back-end Projects</label> <br>
+      <label for="data-visual"><input type="checkbox" id="data-visual" value="data-visual" name="data-visual">  Data Visualization</label> <br>
+      <label for="challenges"><input type="checkbox" id="challenges" value="challenges" name="challenges">  Challenges</label> <br>
+      <label for="open-source-coummnity"> <input type="checkbox" id="open-source-coummnity" value="open-source-coummnity" name="open-source-coummnity">  Open Source Coummnity </label> <br>
+      <label for="gitter"> <input type="checkbox" id="gitter" value="gitter" name="gitter">  Gitter help rooms</label> <br>
+      <label for="videos"> <input type="checkbox" id="videos" value="videos" name="videos"> Videos</label> <br>
+      <label for="city-meetups"> <input type="checkbox" id="city-meetups" value="city-meetups" name="city-meetups"> City Meetups</label> <br>
+      <label for="wiki"> <input type="checkbox" id="wiki" value="wiki" name="wiki">  Wiki</label> <br>
+      <label for="forum"> <input type="checkbox" id="forum" value="forum" name="forum"> Forum </label> <br>
+      <label for="addtional-courses"> <input type="checkbox" id="addtional-courses" value="addtional-courses" name="addtional-courses"> Additional Courses</label>
 
       <br>
 
       <label for="suggestion">Any comments or suggestions?</label> <br>
-      <textarea name="suggestion" id="suggestion" cols="30" rows="10" placeholder="Enter your comment here ..."></textarea>
+      <textarea name="suggestion" id="suggestion" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
       <br>
       <button id="submit">Submit</button>
     </form>
